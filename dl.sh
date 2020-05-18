@@ -9,10 +9,11 @@ read url
 # Format abfrage
 youtube-dl -F $url > format
 
+# Format ausgabe
 cat format
 
 # Auswahl treffen
-echo "Einfacher Download (1), Auswahl von AV (2), -f best Download (3)"
+echo "Einfacher Download by configfile (1), Auswahl von AV (2), -f best Download (3)"
 read -n 1 antwort
 
 if [ "$antwort" = "1" ]
